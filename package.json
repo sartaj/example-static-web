@@ -6,6 +6,6 @@
         "ship": "esops web static ship"        
     },
     "devDependencies": {
-        "esops": "1.0.0"
+        "esops": "1.3.0"
     }
 }
