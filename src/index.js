@@ -1,12 +1,20 @@
+import React from 'react';
+import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 
-import type { AppState } from './types'
+class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.box}>
+        <Text style={styles.text}>Hello, world!</Text>
+      </View>
+    );
+  }
+}
 
-const div = document.createElement('div');
+const styles = StyleSheet.create({
+  box: { padding: 10 },
+  text: { fontWeight: 'bold' }
+});
 
-div.innerHTML = `
-    <div>Web App Test</div>
-`
-
-document.querySelector("#root").appendChild(document.createElement('hr'))
-document.querySelector("#root").appendChild(document.createElement('hr'))
-document.querySelector("#root").appendChild(document.createElement('div'))
+AppRegistry.registerComponent('App', () => App);
+AppRegistry.runApplication('App', { rootTag: document.getElementById('root') });

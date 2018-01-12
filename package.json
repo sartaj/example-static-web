@@ -3,9 +3,14 @@
     "private": true,
     "scripts": {
         "dev": "esops web static dev",
-        "ship": "esops web static ship"        
+        "ship": "esops web static ship"
     },
     "devDependencies": {
         "esops": "1.3.0"
+    },
+    "dependencies": {
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "react-native-web": "^0.3.0"
     }
 }
